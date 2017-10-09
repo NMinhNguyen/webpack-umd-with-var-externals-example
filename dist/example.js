@@ -1,13 +1,13 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("lodash"), require("foo.bar"));
+		module.exports = factory(require("lodash"));
 	else if(typeof define === 'function' && define.amd)
-		define(["lodash", "foo.bar"], factory);
+		define(["lodash"], factory);
 	else if(typeof exports === 'object')
-		exports["example"] = factory(require("lodash"), require("foo.bar"));
+		exports["example"] = factory(require("lodash"));
 	else
-		root["example"] = factory(root["_"], root["foo.bar"]);
-})(this, function(__WEBPACK_EXTERNAL_MODULE_1__, __WEBPACK_EXTERNAL_MODULE_2__) {
+		root["example"] = factory(root["_"]);
+})(this, function(__WEBPACK_EXTERNAL_MODULE_1__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
